@@ -1,0 +1,28 @@
+.snow{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  overflow:hidden;
+  z-index: 0;
+}
+
+.flake{
+  position:absolute;
+  top:-10px;
+  border-radius:999px;
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 0 10px rgba(255,255,255,0.25);
+  animation-name: fall, sway;
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+}
+
+@keyframes fall{
+  0%   { transform: translateY(-10px); }
+  100% { transform: translateY(110vh); }
+}
+
+@keyframes sway{
+  0%,100% { margin-left: 0px; }
+  50%     { margin-left: 18px; }
+}
