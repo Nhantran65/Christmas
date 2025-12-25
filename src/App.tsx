@@ -9,12 +9,13 @@ import p3 from "./assets/photos/3.jpeg";
 import p4 from "./assets/photos/4.jpeg";
 import p5 from "./assets/photos/5.jpeg";
 import p6 from "./assets/photos/6.jpeg";
-
+import p7 from "./assets/photos/7.jpeg";
+import p8 from "./assets/photos/8.jpeg";
 
 type Step = "gift" | "gallery" | "letter";
 
 export default function App() {
-  const photos = useMemo(() => [p1, p2, p3, p4, p6, p5], []);
+  const photos = useMemo(() => [p1, p2, p3, p4, p6, p8, p7, p5], []);
   const [step, setStep] = useState<Step>("gift");
   const [idx, setIdx] = useState(0);
 
